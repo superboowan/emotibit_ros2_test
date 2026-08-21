@@ -28,13 +28,13 @@ EmotiBit 센서 데이터를 LSL(Lab Streaming Layer)에서 받아 ROS 2 토픽�
 
 ## 1. 시간에 따른 EDA 변화
 
-> 그래프 이미지 추후 추가
+![시간에 따른 EDA 신호](images/01-eda-signal.png)
 
 타임스탬프 단위를 초로 변환한 뒤 실행했습니다.
 
 ### 기본 통계치
 
-> 통계 결과 이미지 추후 추가
+![EDA 기본 통계 결과](images/02-eda-statistics.png)
 
 | 지표 | 값 | 해석 |
 | --- | ---: | --- |
@@ -46,13 +46,13 @@ EmotiBit 센서 데이터를 LSL(Lab Streaming Layer)에서 받아 ROS 2 토픽�
 
 ### 피크 개수
 
-> 피크 검출 이미지 추후 추가
+![EDA 피크 검출 결과](images/03-eda-peak-count.png)
 
 피크는 사용자가 순간적으로 각성하거나 긴장한 시점으로 보았습니다. 전체 8,876개 데이터 중 813개, 약 9%에서 피크가 검출되었습니다.
 
 ## 2. PPG 분석
 
-> PPG 그래프 이미지 추후 추가
+![시간에 따른 PPG 신호](images/04-ppg-signal.png)
 
 ### 심장 박동 피크
 
@@ -60,7 +60,7 @@ EmotiBit 센서 데이터를 LSL(Lab Streaming Layer)에서 받아 ROS 2 토픽�
 
 ### 평균 BPM
 
-> 평균 BPM 이미지 추후 추가
+![평균 BPM 계산 결과](images/05-average-bpm.png)
 
 측정된 평균 심박수는 과도한 긴장 또는 운동 상태가 아닌 정상 휴식 범위로 해석했습니다.
 
@@ -73,7 +73,7 @@ EmotiBit 센서 데이터를 LSL(Lab Streaming Layer)에서 받아 ROS 2 토픽�
 
 ### HRV
 
-> HRV 이미지 추후 추가
+![HRV 계산 결과](images/06-hrv.png)
 
 | HRV | 해석 |
 | --- | --- |
@@ -83,7 +83,7 @@ EmotiBit 센서 데이터를 LSL(Lab Streaming Layer)에서 받아 ROS 2 토픽�
 
 ### RMSSD
 
-> RMSSD 이미지 추후 추가
+![RMSSD 계산 결과](images/07-rmssd.png)
 
 측정 결과는 중간 상태로, 스트레스가 과도하지 않은 일반 상태로 해석했습니다.
 
@@ -93,13 +93,13 @@ EmotiBit 센서 데이터를 LSL(Lab Streaming Layer)에서 받아 ROS 2 토픽�
 
 ### 맥박 강도
 
-> PPG amplitude 이미지 추후 추가
+![PPG amplitude 계산 결과](images/08-ppg-amplitude.png)
 
 PPG 신호의 평균 amplitude를 맥박 강도로 확인했습니다.
 
 ### 변동성
 
-> PPG 변동성 이미지 추후 추가
+![PPG 변동성 계산 결과](images/09-ppg-variability.png)
 
 자연스러운 생체 신호의 변동성을 확인했습니다.
 
@@ -110,15 +110,15 @@ PPG 신호의 평균 amplitude를 맥박 강도로 확인했습니다.
 
 ### 같은 시간대 평균 산출
 
-> 시간대 평균 이미지 추후 추가
+![EDA와 PPG의 같은 시간대 평균 산출](images/10-time-aligned-average.png)
 
 ### Engagement 점수 산출
 
-> Engagement 점수 이미지 추후 추가
+![Engagement 점수 산출 과정](images/11-analysis-table.png)
 
 ### 결과표
 
-> 결과표 이미지 추후 추가
+![Engagement 분석 결과표](images/12-engagement-score.png)
 
 # Engagement 분석 결과 (EDA + PPG 기반)
 
